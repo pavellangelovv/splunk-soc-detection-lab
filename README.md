@@ -16,6 +16,7 @@ Instead of reviewing raw Windows events one by one this view gives a quick overv
 <img width="1221" height="293" alt="d1087c6c-8168-479b-afa9-07ec0addf70e" src="https://github.com/user-attachments/assets/a1dde298-2930-4825-a62c-073810b9d997" />
 
 This screenshot shows a focused summary of Windows authentication-related security events collected in Splunk.
+
 --
 
 <img width="1643" height="219" alt="recon_process_commands" src="https://github.com/user-attachments/assets/d2997983-a27a-4690-b948-3bc69883b7b6" />
