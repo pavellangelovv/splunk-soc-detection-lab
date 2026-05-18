@@ -1,0 +1,22 @@
+
+index=wineventlog sourcetype="WinEventLog:*"
+| stats count by index sourcetype source host
+| sort sourcetype
+
+index=wineventlog sourcetype="WinEventLog:Security"
+| stats count by EventCode
+| sort - count
+
+index=wineventlog sourcetype="WinEventLog:Security" EventCode=4624
+| table _time host EventCode Account_Name Logon_Type Source_Network_Address
+| sort - _time
+
+
+index=wineventlog sourcetype="WinEventLog:Security" EventCode=4625
+| table _time host EventCode Account_Name Failure_Reason Source_Network_Address
+| sort - _time
+
+
+index=wineventlog sourcetype="WinEventLog:Security" EventCode=4672
+| table _time host EventCode Account_Name
+| sort - _time
